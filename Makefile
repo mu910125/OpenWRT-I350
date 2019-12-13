@@ -3,6 +3,10 @@
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
 
+# make package/I350/clean
+# make package/I350/compile
+# make package/I350/install
+
 include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/kernel.mk
 
