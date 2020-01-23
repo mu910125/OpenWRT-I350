@@ -32,7 +32,7 @@ endef
 
 define KernelPackage/$(PKG_NAME)/description
 	I350 Kernel Driver.
-	download form Intel Manually
+	Download form Intel
 endef
 
 define Build/Prepare
