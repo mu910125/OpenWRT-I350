@@ -11,14 +11,14 @@ include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/kernel.mk
 
 PKG_NAME:=I350
-PKG_VERSION:=5.3.5.39
+PKG_VERSION:=5.3.5.42
 PKG_RELEASE:=0
 
 F_NAME:=igb-$(PKG_VERSION)
 PKG_SOURCE:=$(F_NAME).tar.gz
 PKG_SOURCE_URL:=https://downloadmirror.intel.com/13663/eng/
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)
-PKG_HASH:=47e9f9b95d1f7c86351826f6dc9ecc5445a3d8cedfce5691d38327109bdaf0bd
+PKG_HASH:=8feccf37b10cde1d68caa883a153d7584ae03312ad93101fe873c51e43e8b517
 
 PKG_BUILD_DIR:=$(KERNEL_BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_BUILD_PARALLEL:=1
@@ -32,7 +32,7 @@ endef
 
 define KernelPackage/$(PKG_NAME)/description
 	I350 Kernel Driver.
-	Download form Intel
+	download form Intel
 endef
 
 define Build/Prepare
